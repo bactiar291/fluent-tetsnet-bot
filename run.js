@@ -71,7 +71,7 @@ async function sendLegacyTransaction(contract, methodName, args, value = 0) {
     let gasLimit;
     try {
         const estimate = await contract.estimateGas[methodName](...args, { value });
-        gasLimit = estimate * BigInt(120) / BigInt(100); // 
+        gasLimit = estimate * BigInt(120) / BigInt(100); 
     } catch (error) {
         console.log("Estimasi gas gagal, menggunakan default 500000");
         gasLimit = BigInt(500000);
@@ -297,7 +297,7 @@ async function combineCards() {
 
 function showMenu() {
     console.log("\n========================================");
-    console.log("🚀 PUMP PALS AUTOMATION TOOL");
+    console.log("🚀 PUMP PALS AUTOMATION TOOL | BACTIAR291");
     console.log("========================================");
     console.log("1. 🛒 Beli Kartu Bronze (Marketplace)");
     console.log("2. 🎫 Buka Lootbox Bronze (0.005 ETH)");
